@@ -1,0 +1,15 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  /* Highlighted active link style */
+.active-nav {
+  background-color: #ec4899; /* Tailwind's pink-500 */
+  color: white;
+  font-weight: 600;
+  border-radius: 9999px;
+}
+
+  
+   
