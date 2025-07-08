@@ -2,6 +2,9 @@ import rakesh from "../assets/title.png";
 import ShinyText from "../assets/styles/ShinyText";
 import FadeContent from "../assets/styles/FadeContent";
 
+// Icons
+import { FaGithub, FaLinkedin, FaInstagram } from "react-icons/fa";
+ 
 export default function AboutSection() {
   return (
     <section
@@ -19,9 +22,6 @@ export default function AboutSection() {
         </div>
 
         {/* Right: About Text */}
-
-        {/* Anything placed inside this container will be fade into view */}
-
         <div className="md:w-1/2 text-center md:text-left">
           <FadeContent
             blur={true}
@@ -35,11 +35,10 @@ export default function AboutSection() {
               skills and a knack for turning limitations into opportunities.
               Despite using an old 32-bit laptop, I've built this portfolio with
               Google Firebase Studio's cloud-based VS Code, proving that
-              creativity thrives even in constraints. Plato said, 'Necessity is
-              the mother of invention,' and I live by that, always ready to
+              creativity thrives even in constraints. Plato said, "Necessity is
+              the mother of invention," and I live by that, always ready to
               innovate and adapt.
             </p>
-             
 
             {/* Resume Button */}
             <a
@@ -55,6 +54,34 @@ export default function AboutSection() {
                 className="custom-class"
               />
             </a>
+
+            {/* Social Icons */}
+            <div className="flex justify-center md:justify-start space-x-6 mt-6 text-2xl">
+              <a
+                href="https://github.com/irakeshr"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gray-400 hover:text-pink-500 transition"
+              >
+                <FaGithub />
+              </a>
+              <a
+                href="https://www.linkedin.com/in/rakesh-r-854625248"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gray-400 hover:text-blue-500 transition"
+              >
+                <FaLinkedin />
+              </a>
+              <a
+                href="https://www.instagram.com/irakesh.r"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gray-400 hover:text-pink-400 transition"
+              >
+                <FaInstagram />
+              </a>
+            </div>
           </FadeContent>
         </div>
       </div>
