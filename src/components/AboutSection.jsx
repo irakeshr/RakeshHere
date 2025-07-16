@@ -1,10 +1,9 @@
 import rakesh from "../assets/title.png";
 import ShinyText from "../assets/styles/ShinyText";
 import FadeContent from "../assets/styles/FadeContent";
-
-// Icons
 import { FaGithub, FaLinkedin, FaInstagram } from "react-icons/fa";
- 
+import { Parallax } from "react-scroll-parallax";
+
 export default function AboutSection() {
   return (
     <section
@@ -12,14 +11,15 @@ export default function AboutSection() {
       className="w-full h-screen px-6 md:px-20 py-20 bg-black text-white flex items-center"
     >
       <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center md:items-start gap-12">
-        {/* Left: Image */}
-        <div className="flex justify-center md:justify-start md:w-1/2">
+
+        {/* Left: Image with Parallax */}
+        <Parallax translateY={[-20, 20]} className="flex justify-center md:justify-start md:w-1/2">
           <img
             src={rakesh}
             alt="Rakesh Avatar"
-            className="w-60 h-60 md:w-72 md:h-72 rounded-full object-contain shadow-xl transition-transform hover:scale-105"
+            className="w-60 h-60 hidden md:block md:w-72 md:h-72 rounded-full object-contain shadow-xl transition-transform hover:scale-105"
           />
-        </div>
+        </Parallax>
 
         {/* Right: About Text */}
         <div className="md:w-1/2 text-center md:text-left">

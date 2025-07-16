@@ -6,21 +6,22 @@ import AboutSection from './components/AboutSection';
 import ProjectsSection from './components/ProjectsSection';
 import ContactSection from './components/ContactSection';
 import Footer from './components/Footer';
+import { ParallaxProvider } from 'react-scroll-parallax';
 
 function App() {
    
 
   return (
-    <>
-    <div className="bg-black text-white min-h-screen">
+     <ParallaxProvider><div className="bg-black text-white min-h-screen">
       <Navbar/>
       <HeroSection />
       <AboutSection/>
       <ProjectsSection/>
       <ContactSection/>
       <Footer/>
-    </div>
-    </>
+    </div></ParallaxProvider>
+    
+     
   )
 }
 
