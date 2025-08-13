@@ -31,13 +31,15 @@ export default function AboutSection() {
           >
             <h2 className="text-4xl font-bold mb-4 text-white">About Me</h2>
             <p className="text-gray-400 text-base md:text-lg leading-relaxed">
-              I'm a full-stack developer eager to grow, with solid frontend
-              skills and a knack for turning limitations into opportunities.
-              Despite using an old 32-bit laptop, I've built this portfolio with
-              Google Firebase Studio's cloud-based VS Code, proving that
-              creativity thrives even in constraints. Plato said, "Necessity is
-              the mother of invention," and I live by that, always ready to
-              innovate and adapt.
+            I am a passionate and detail-oriented tech enthusiast with a strong foundation in 
+            software development, web technologies, and problem-solving. My journey in technology has been 
+            driven by curiosity and a desire to build impactful, user-friendly solutions. I enjoy exploring both 
+            frontend and backend development, with hands-on experience in JavaScript, React, and Python, alongside a 
+            growing interest in cloud technologies and database management.
+
+Beyond technical skills, I value adaptability, continuous learning, and collaboration.
+ I thrive in environments where I can contribute creative ideas, learn from others, and turn challenges into 
+ opportunities. My goal is to combine innovation with precision to deliver results that truly make a difference.
             </p>
 
             {/* Resume Button */}
